@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Heartstopper Vol. 1",
+    "author": "Alice Osman",
+    "description": "Description of book 1.",
+    "image": "/assets/images/heartstopper.jpg",
+    "discussion_date": "2025-11-20"
+  },
+  {
+    "title": "Ich bin Linus",
+    "author": "Linus Giese",
+    "description": "Description of book 2.",
+    "image": "/assets/images/linus.jpg",
+    "discussion_date": "2025-12-18"
+  },
+  {
+    "title": "TBA",
+    "author": "TBA",
+    "description": "Description of book 3.",
+    "image": "/assets/images/pic02.jpg",
+    "discussion_date": "2026-01-18"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Book Title 1",
+    "author": "Author 1",
+    "description": "Description of book 1.",
+    "image": "/assets/images/book1.jpg",
+    "discussion_date": "2025-11-10"
+  },
+  {
+    "title": "Book Title 2",
+    "author": "Author 2",
+    "description": "Description of book 2.",
+    "image": "/assets/images/book2.jpg",
+    "discussion_date": "2025-12-05"
+  }
+]
