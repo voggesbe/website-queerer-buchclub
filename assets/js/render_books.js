@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById('all-books-container');
   const baseurl = container.getAttribute('data-baseurl') || '';
 
-  fetch(`${baseurl}/assets/data/books_2025.json`)
+  fetch(`${baseurl}/assets/data/books.json`)
     .then(response => response.json())
     .then(books => {
       if (books.length === 0) {

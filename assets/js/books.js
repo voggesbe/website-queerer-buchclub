@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const baseurl = container.getAttribute('data-baseurl') || '';
   const now = new Date();
 
-  fetch(`${baseurl}/assets/data/books_2025.json`)
+  fetch(`${baseurl}/assets/data/books.json`)
     .then(response => {
       if (!response.ok) throw new Error('Network response was not ok');
       return response.json();
