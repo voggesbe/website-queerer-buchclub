@@ -21,9 +21,9 @@ jobs:
     - name: Install dependencies
       run: |
         gem install bundler
-        bundle install --jobs 4 --retry 3
+        bundle install
 
-    - name: Build site
+    - name: Build the site
       run: bundle exec jekyll build
 
     - name: Deploy to GitHub Pages
