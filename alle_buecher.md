@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Alle Bücher
+title: Kommende Bücher
 icon: fa-book
 order: 2
 ---

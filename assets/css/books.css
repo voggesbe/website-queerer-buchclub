@@ -1,44 +1,63 @@
-.all-books-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin: 1rem 0;
-}
-
 .book-detail {
   display: grid;
-  grid-template-columns: 200px 1fr; /* fixed width for image, flexible for text */
+  grid-template-columns: 200px 1fr;
   gap: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  padding: 1rem;
-  border-radius: 8px;
-  background-color: white;
+  margin-bottom: 3em;
   align-items: start;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #888; /* base text color in Prologue */
+
+  background: #fafafa;
+  padding: 1.5em;
+  border-radius: 6px;
+  box-shadow: 0 0.05em 0.15em rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+
+  /* On hover, elevate the shadow */
+  &:hover {
+    box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.15);
+  }
 }
 
-.book-detail img {
+.book-image-col img {
   width: 100%;
   height: auto;
   border-radius: 4px;
-  margin: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  object-fit: cover;
 }
 
-.book-detail h2 {
-  font-size: 1.25rem;
+.book-info-col {
+  color: #666; /* slightly darker for info text */
+}
+
+.book-info-col h2 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6em;
+  font-weight: 600;
+  font-size: 1.5em;
+  letter-spacing: -1px;
+  color: #333; /* heading slightly darker */
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.book-detail p {
-  margin-bottom: 0.5rem;
+.book-info-col p {
+  margin: 0.6em 0;
+  font-weight: 300;
+  line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-  .book-detail {
-    grid-template-columns: 1fr; /* stack columns on small screens */
-  }
+.book-info-col p strong {
+  color: #444;
+  font-weight: 600;
+}
 
-  .book-detail img {
-    margin-bottom: 1rem;
-  }
+.book-info-col .description {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1.2em;
+}
+
+.description {
+  white-space: pre-wrap; /* preserves line breaks and wraps text */
 }
