@@ -5,3 +5,31 @@ order: 4
 ---
 
 Wir treffen uns in den Räumen von queerKAstle und bei Themenwochen in Kollaboration mit der Stadtbibliothek auch in der zentralen Bibliothek.
+
+<section class="location-info-two-columns">
+  <div class="location-column">
+    <h2>queerKAstle Treffpunkt</h2>
+    <address>
+      Liebigstraße 10-12<br>
+      76135 Karlsruhe
+    </address>
+    <p>
+      <a href="https://maps.app.goo.gl/gpktWSLeE9dNcWDP9" target="_blank" rel="noopener noreferrer">
+        Auf Google Maps ansehen &rarr;
+      </a>
+    </p>
+  </div>
+
+  <div class="location-column">
+    <h2>Zentrale Stadtbibliothek</h2>
+    <address>
+      Ständehausstraße 2<br>
+      76133 Karlsruhe
+    </address>
+    <p>
+      <a href="https://maps.app.goo.gl/s2Qd8usvpJfPn3Aq9" target="_blank" rel="noopener noreferrer">
+        Auf Google Maps ansehen &rarr;
+      </a>
+    </p>
+  </div>
+</section>
