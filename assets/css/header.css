@@ -28,3 +28,44 @@
     line-height: 1.6;
   }
 }
+
+/* Base header styles */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+/* Logo container styles */
+#header .logo {
+  display: flex;
+  align-items: center;
+  white-space: nowrap; /* prevent logo text from wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 60%; /* limit logo width to avoid overlap */
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Navigation styles */
+#header nav {
+  flex-shrink: 0;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 600px) {
+  #header {
+    flex-wrap: wrap; /* allow items to wrap on thin screens */
+  }
+  #header .logo {
+    max-width: 100%; /* full width */
+    font-size: 1.2rem; /* smaller font */
+    margin-bottom: 0.5rem; /* spacing below logo */
+  }
+  #header nav {
+    width: 100%; /* nav on separate line */
+    text-align: right;
+  }
+}
