@@ -74,21 +74,22 @@ async function renderUpcomingLinkedDates() {
   const dateBoxes = upcomingDates.map(date => {
     const key = formatDateKey(date);
     const book = bookMap[key];
-
-    // Create link URL to book anchor on alle_buecher.html, or fallback '#'
     const bookSlug = book ? book.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]+/g, '') : '';
-    const href = bookSlug ? `alle_buecher.html#${bookSlug}` : '#';
+    const href = bookSlug ? `alle_buecher.html#${bookSlug}` : '';
 
     return `
-      <div class="date-box" style="flex:1; padding: 1rem; text-align: center;">
-        <a href="${href}" style="color: #007acc; text-decoration: none; font-weight: bold;">
-          ${date.toLocaleDateString('de-DE', { weekday:'short', day:'numeric', month:'long', year:'numeric', hour:'2-digit', minute:'2-digit' })}
+      <div class="date-box">
+        <a href="${href}">
+          ${date.toLocaleDateString('de-DE', {
+            weekday: 'short', day: 'numeric', month: 'long', year: 'numeric',
+            hour: '2-digit', minute: '2-digit'
+          })}
         </a>
       </div>
     `;
   });
 
-  container.innerHTML = `<div style="display:flex; gap: 1rem;">${dateBoxes.join('')}</div>`;
+  container.innerHTML = `<div class="date-container">${dateBoxes.join('')}</div>`;
 }
 
 // Run on page load

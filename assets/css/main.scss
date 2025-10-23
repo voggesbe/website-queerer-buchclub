@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @import "jekyll-theme-prologue";
-@import "banner";
+@import "header";
 
 .image.featured {
   text-align: center;
@@ -22,6 +22,7 @@
   text-align: left;
   margin-top: 2rem;
   margin-bottom: 3rem;
+  flex-wrap: wrap; /* allows wrapping on small screens */
 }
 
 .location-column {
@@ -49,5 +50,50 @@
 
 .location-column a:hover {
   border-bottom-color: transparent;
+}
+
+/* Mobile responsive: stack columns vertically */
+@media (max-width: 600px) {
+  .location-info-two-columns {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .location-column {
+    min-width: auto;
+  }
+  .image.featured img {
+    max-height: 200px;
+    width: auto;
+  }
+}
+
+.date-container {
+  display: flex;
+  flex-wrap: wrap; /* wrap on small screens */
+  gap: 1rem;
+  justify-content: center;
+}
+
+.date-box {
+  flex: 1 1 200px; /* allow shrinking/growing, minimum 200px */
+  padding: 1rem;
+  text-align: center;
+}
+
+.date-box a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+/* On very small screens, stack fully */
+@media (max-width: 400px) {
+  .date-container {
+    flex-direction: column;
+  }
+  .date-box {
+    flex-basis: 100%;
+  }
 }
 

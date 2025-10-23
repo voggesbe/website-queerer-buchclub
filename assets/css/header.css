@@ -1,0 +1,30 @@
+.header-overlay {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 6px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.5;
+}
+
+.header-overlay a {
+  color: #aad8ff;
+  word-break: break-word;
+  white-space: normal;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .header-overlay {
+    max-width: 90%;
+    padding: 1rem 1rem;
+    font-size: 1em;
+    line-height: 1.6;
+  }
+}
