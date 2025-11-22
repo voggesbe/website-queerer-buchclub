@@ -1462,7 +1462,7 @@ section ul, section ol, article ul, article ol {
 .image.avatar48 {
   width: 48px;
   height: 48px;
-  background: #f00;
+  background: rgb(9, 30, 67);
 }
 .image.avatar48 img {
   width: 48px;
@@ -1778,19 +1778,25 @@ button:active,
   margin: 1.75em 1.5em 1.5em 1.5em;
   min-height: 48px;
   cursor: default;
+  display: flex; /* Elemente nebeneinander anordnen */
+  align-items: center; /* vertikal zentrieren */
+  gap: 1em; /* Abstand zwischen Avatar und Text */
 }
 #logo a {
   border: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
 }
 #logo h1 {
-  position: relative;
   color: #fff;
   font-weight: 600;
   font-size: 1em;
   line-height: 1em;
+  margin: 0;
 }
 #logo p {
-  position: relative;
   display: block;
   font-size: 0.6em;
   color: rgba(255, 255, 255, 0.5);
@@ -1798,9 +1804,13 @@ button:active,
   margin: 0.5em 0 0 0;
 }
 #logo .image {
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: static; /* keine absolute Positionierung mehr */
+  flex-shrink: 0; /* Bild nicht schrumpfen lassen */
+}
+#logo .image img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
 }
 
 #nav ul {
