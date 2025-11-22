@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(books => {
       const upcomingBooks = books
       .filter(book => new Date(book.discussion_date) >= now)
-      .slice(0, 6); // Limit to 4 books
+      .slice(0, 3); // Limit to 4 books
 
       if (upcomingBooks.length === 0) {
         container.innerHTML = '<p>Derzeit keine kommenden Bücher.</p>';
