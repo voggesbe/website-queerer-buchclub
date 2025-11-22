@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         colDiv.innerHTML = `
           <div class="item" style="text-align:center;">
             <a href="${baseurl}/alle_buecher.html#${slug}">
-              <img src="${baseurl}${book.image}" alt="${book.title}" style="width:100%; height:auto;" />
+              <img src="${baseurl}${book.image}" alt="${book.title}" style="width:auto; height:200 px;" />
             </a>
             <header>
               <h3>${book.title}</h3>
